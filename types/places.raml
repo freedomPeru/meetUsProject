@@ -1,0 +1,33 @@
+#%RAML 1.0 Library
+
+types:
+  places:
+    type: object
+    properties:
+      id: 
+        type: string
+        description: Place identifier.        
+      legalName: 
+        type: string
+        description: Business legal name.
+      businessName: 
+        type: string
+        description: Business name used to recognized a business itself in a certain place.    
+      preferenceOrder: 
+        type: number
+        minLenght: 0
+        maxLenght: 5
+        description: Preference order number is assigned according to the number of meeting that have been taken place in business for app users.
+      address: 
+        type: string
+        description: Business address.
+      district: 
+        type: string
+        description: Business address.
+      province: 
+        type: string
+        description: Business address.
+      department: 
+        type: string
+        description: Business address.  
+    
