@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "id": "123",
+            "legalName": "Starbucks S.A.",
+            "businessName": "Starbucks Real Plaza Salaverry",
+            "preferenceOrder": 1.5,
+            "address": "Av. Brasil 2980",
+            "district": "Jesus Maria",
+            "province": "Lima",
+            "department": "Lima",
+            "meetingPurpose": [
+                {
+                    "id": "BUSINESS",
+                    "name": "Business meeting"
+                },
+                {
+                    "id": "FRIENDLY",
+                    "name": "Friendly meeting"
+                }
+            ]
+        },
+        {
+            "id": "124",
+            "legalName": "Café Benne S.A.",
+            "businessName": "Benne Real Plaza Salaverry",
+            "preferenceOrder": 3.5,
+            "address": "Av. Brasil 2980",
+            "district": "Jesus Maria",
+            "province": "Lima",
+            "department": "Lima",
+            "meetingPurpose": [
+                {
+                    "id": "FRIENDLY",
+                    "name": "Friendly meeting"
+                }
+            ]
+        }
+    ]
+}
