@@ -1,0 +1,65 @@
+#%RAML 1.0
+title: "Meet us"
+version: v0.1.0
+protocols: [ HTTP, HTTPS ]
+description: !include README.md
+baseUri: https://www.bbvaapis.com/meetus/v0
+
+uses:
+  places: types/places.raml
+
+/places:
+  description: |
+    Resource used to manage all the places where the app users can meet.
+  type: collection
+  get:
+    description: |
+      Retrieves a list of places where the app user can meet.
+    queryParameters:
+      meetingPurpose.id: 
+        description: |
+          Meeting purpose identifier.
+        type: string
+        required: false
+        example: "business"
+      district.id:
+        description: |
+          District identifier for meeting.
+        type: string
+        required: false
+        example: "Magdalena"  
+      province.id:
+        description: |
+          Province identifier for meeting.
+        type: string
+        required: false
+        example: "Lima"
+      department.id:
+        description: |
+          Department identifier for meeting.
+        type: string
+        required: false
+        example: "La Libertad"                   
+    responses:
+      200:
+        body:          
+          application/json:
+            examples:
+              simplest:
+                value: !include examples/places/get_200.json
+                description: JSON input example for the simplest call GET /places
+                displayName:  Basic JSON input example             
+            type: places.places
+  post:
+    description: |
+      Create a business place where app users can meet.                   
+    responses:
+      201:
+        body:          
+          application/json:
+            examples:
+              simplest:
+                value: !include examples/places/get_200.json
+                description: JSON input example for the simplest call GET /places
+                displayName:  Basic JSON input example             
+            type: places.places            
