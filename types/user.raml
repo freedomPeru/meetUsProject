@@ -1,0 +1,19 @@
+
+#%RAML 1.0 Library
+
+types:
+  user:
+    type: object
+    properties:
+      id: 
+        type: string
+        description: User unique identifier.   
+        required: true    
+      latitude:
+        type: number
+        description: User latitude coordinate.
+        format: int64
+      longitude:
+        type: number
+        description: User longitude coordinate.
+        format: int64

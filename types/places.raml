@@ -1,5 +1,8 @@
 #%RAML 1.0 Library
 
+uses:
+  meetingPurpose: meetingPurpose.raml
+
 types:
   places:
     type: object
@@ -30,4 +33,13 @@ types:
       department: 
         type: string
         description: Business address.  
+      meetingPurpose:
+        type: meetingPurpose.meetingPurpose
+        description: Meeting purpose information.
+      latitude:
+        type: number
+        description: Latitude coordinate.
+      longitude:
+        type: number
+        description: Longitude coordinate.
     

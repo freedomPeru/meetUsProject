@@ -1,0 +1,31 @@
+#%RAML 1.0 Library
+
+uses:
+  meetingPurpose: meetingPurpose.raml
+
+types:
+  user:
+    type: object
+    properties:
+      user:
+        type: user.user
+        description: User app information.
+      id: 
+        type: string
+        description: User unique identifier.   
+        required: true    
+      latitude:
+        type: number
+        description: User latitude coordinate.
+        format: int64
+      longitude:
+        type: number
+        description: User longitude coordinate.
+        format: int64
+      meetingPurpose:
+        type: meetingPurpose.meetingPurpose[]
+  users:
+    type: array
+    items: user
+    minItems: 1
+    uniqueItems: true

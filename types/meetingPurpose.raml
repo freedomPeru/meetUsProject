@@ -1,0 +1,17 @@
+#%RAML 1.0 Library
+
+types:
+  meetingPurpose:
+    type: object
+    properties:
+      id: 
+        type: string
+        enum: [FRIENDLY, BUSINESS, DRINKING]
+        description: | 
+            Meeting purpose unique identifier.
+            - **FRIENDLY**: Users are planning to hang out with each other.
+            - **BUSINESS**: Users will have business meeting.
+            - **DRINKING**: Users want some beers.
+      name: 
+        type: string
+        description: Meeting purpose description.  
