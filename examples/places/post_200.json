@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "id": "123",
+      "legalName": "Starbucks S.A.",
+      "businessName": "Starbucks Real Plaza Salaverry",
+      "preferenceOrder": 1.5,
+      "address": "Av. Brasil 2980",
+      "district": "Jesus Maria",
+      "province": "Lima",
+      "department": "Lima",
+      "meetingPurpose": [
+        {
+          "id": "BUSINESS",
+          "name": "Business meeting"
+        },
+        {
+          "id": "FRIENDLY",
+          "name": "Friendly meeting"
+        }
+      ],
+      "latidude": -233.22,
+      "longitude": 22.3
+    }
+  ]
+}
