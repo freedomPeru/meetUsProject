@@ -1,0 +1,20 @@
+#%RAML 1.0 Library
+
+uses:
+  meetingPurpose: meetingPurpose.raml
+  user: user.raml
+
+types:
+  postPlace:
+    type: object
+    properties:
+      user:
+        type: user.user[]
+        description: User app information.
+      meetingPurpose:
+        type: meetingPurpose.meetingPurpose[]
+  postPlaces:
+    type: array
+    items: postPlace
+    minItems: 1
+    uniqueItems: true
