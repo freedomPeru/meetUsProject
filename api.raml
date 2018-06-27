@@ -35,3 +35,27 @@ uses:
                 description: JSON input example for the simplest call POST /places
                 displayName:  Basic JSON input example             
             type: places.places            
+
+/participants:
+  description: |
+    Resource used to manage the participant information.
+  type: collection
+  get:
+    description: |
+      This service retrieves a list of possibles participants in a meeting.  
+    queryParameters: 
+      fullName:
+        type: string
+        description: Full name parameter.
+        example: "Jose"     
+    responses:
+      200:
+        description: OK.
+        body:          
+          application/json:
+            examples:
+              simplest:
+                value: !include examples/participants/get_200.json
+                description: JSON input example for the simplest call GET /participant
+                displayName:  Basic JSON input example             
+            type: participant.participant[]                  
