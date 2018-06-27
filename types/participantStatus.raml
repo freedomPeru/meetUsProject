@@ -1,0 +1,19 @@
+#%RAML 1.0 Library
+
+types:
+	participantStatus:
+		type: object
+		properties:
+			id:
+				type: string
+				enum: [ACTIVE, INACTIVE, NO_BOTHER, IN_MEETING]
+				description: |
+					Participant status unique identifier.  
+					- **ACTIVE**: The user is active and could be invited for meeting.
+					- **INACTIVE**: User is not active at the moment and cannot be invited for meeting.
+					- **NO_BOTHER**: User is active but would not like to be invited to a meeting.
+					- **IN_MEETING**: User is at a meeting.
+			name:
+				type: string
+				description: |
+					Participant status description.					

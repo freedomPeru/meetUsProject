@@ -1,0 +1,48 @@
+#%RAML 1.0 Library
+
+uses:
+	participantStatus: participantStatus.raml
+	geographicInformation: geographicInformation.raml
+
+types:
+	participant:
+		type: object
+		properties:
+			id:
+				type: string
+				description: |
+					Participant unique identifier.
+			avatar:
+				type: string
+				description: |
+					Participant image avatar.
+			firstName:
+				type: string
+				description: |
+					Participant first name.
+			middleName:
+				type: string
+				description: |
+					Participant middle name.			
+			lastName:
+				type: string
+				description: |
+					Participant last name.
+			secondLastName:
+				type: string
+				description: |
+					Participant second last name.
+			status:
+				type: participantStatus.participantStatus
+				description: |
+					Participant status information.			
+      latitude:
+        type: number
+        description: User latitude coordinate.
+        format: int64
+      longitude:
+        type: number
+        description: User longitude coordinate.
+        format: int64
+
+    
