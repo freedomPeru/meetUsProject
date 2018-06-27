@@ -10,3 +10,8 @@ The main user could add other users he/she would like to meet and choose for a m
 
 #### API
 The endpoint that will cover this funcionality will be `POST /places`.
+
+### Search participants
+The main user could search for posibles participants by their full name and then add them to the solicitude for seeing places. The app will saved the user id in memory. The main user could look for many participants.
+
+The endpoint that will cover this funcionality will be `GET /participants`
