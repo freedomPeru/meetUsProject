@@ -25,3 +25,8 @@ Once the invitation has been sent to the participant, it is his duty to answer. 
 
 ![Managing invitations](/images/managingInvitation.png)
 
+## 1.3 Seeing meetings
+
+Users could see meetings in which they participate (for participating, user must accept the meeting invitation first). They can also see meetin detail like other participants' information. Only the admin user (the one who created the meeting) could perform some actions like 1) deleting/adding a participant and 2) updating meeting information.
+
+![Seeing meetings](/images/seeingMeetings.png)
