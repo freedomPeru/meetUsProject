@@ -1,0 +1,21 @@
+{
+  "participants": [
+    {
+      "id": "123"
+    },
+    {
+      "id": "124"
+    },
+    {
+      "id": "125"
+    }
+  ],
+  "schedule": {
+    "date": "2019-05-12",
+    "time": "16:40"
+  },
+  "place": {
+    "id": "123"
+	},
+	"meetingName":"Nos vemos!"
+}

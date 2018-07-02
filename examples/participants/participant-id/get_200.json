@@ -1,0 +1,35 @@
+{
+  "data": {
+    "id": "123",
+    "avatar": "/rnr.jpg",
+    "firstName": "Pedro",
+    "middleName": "Luis",
+    "lastName": "Rodriguez",
+    "secondLastName": "Vargas",
+    "status": {
+      "id": "ACTIVE",
+      "name": "The user is active and could be invited for meeting."
+    },
+    "birthDay": "1994-07-11",
+    "address": {
+      "addressName": "Av. Brasil 2980 dpto 402",
+      "reference": "Frente al velatorio de la policia",
+      "district": {
+        "id": "MAG",
+        "name": "Magdalena del Mar"
+      },
+      "province": {
+        "id": "LIM",
+        "name": "Lima"
+      },
+      "department": {
+        "id": "LIM",
+        "name": "Lima"
+      },
+      "geolocation": {
+        "latitude": 123.21,
+        "longitude": 12.32
+      }
+    }
+  }
+}

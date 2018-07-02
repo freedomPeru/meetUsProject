@@ -1,0 +1,11 @@
+{
+  "name": "New name",
+  "schedule": {
+    "date": "2019-06-12",
+    "time": "17:00"
+  },
+  "place": "234",
+  "status": {
+    "id": "CANCELLED"
+  }
+}
