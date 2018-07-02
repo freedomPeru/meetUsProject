@@ -12,18 +12,16 @@ uses:
 /places:
   description: |
     Resource used to manage all the places where the app users can meet.
-  type: collection
   post:
     description: |
-      This service retrieves a list of places where the app users could meet.  
+      This service retrieves a list of places where the app users can meet.
     body:          
       application/json:
         examples:
           simplest:
             value: !include examples/places/post_request.json
             description: JSON input example for the simplest call POST /places
-            displayName:  Basic JSON input example             
-        type: users.users        
+            displayName:  Basic JSON input example                  
     responses:
       200:
         description: OK.
@@ -33,13 +31,28 @@ uses:
               simplest:
                 value: !include examples/places/post_200.json
                 description: JSON input example for the simplest call POST /places
-                displayName:  Basic JSON input example             
-            type: places.places            
+                displayName:  Basic JSON input example                     
+  /{place-id}:
+    description: |
+      Resource used to manage a single place.
+    get:
+      description: |
+        This service get the detail information of a single place.
+      responses: 
+        200:
+          description: OK.
+          body:          
+            application/json:
+              examples:
+                simplest:
+                  value: !include examples/places/place-id/get_200.json
+                  description: JSON input example for the simplest call GET /places/{place-id}
+                  displayName:  Basic JSON output example                 
+
 
 /participants:
   description: |
     Resource used to manage the participant information.
-  type: collection
   get:
     description: |
       This service retrieves a list of possibles participants in a meeting.  
@@ -57,5 +70,98 @@ uses:
               simplest:
                 value: !include examples/participants/get_200.json
                 description: JSON input example for the simplest call GET /participant
-                displayName:  Basic JSON input example             
-            type: participant.participant[]                  
+                displayName:  Basic JSON output example   
+  /{participant-id}:
+    description: |
+      Resource used to manage the detail information of a participant.
+    get:
+      description: |
+        This services retrieves the detail information of a participant.
+      responses:
+        200:
+          description: OK.
+          body:          
+            application/json:
+              examples:
+                simplest:
+                  value: !include examples/participants/participant-id/get_200.json
+                  description: JSON input example for the simplest call GET /participant/{participant-id}
+                  displayName:  Basic JSON output example   
+/meetings:
+  description: |
+    Resource used to manage all the meetings. A meeting is an agreement between app users to meet at a certain place and time. 
+  post:
+    description: |
+      This service creates a meeting.
+    body:          
+      application/json:
+        examples:
+          simplest:
+            value: !include examples/meetings/post_request.json
+            description: JSON input example for the simplest call POST /meetings
+            displayName:  Basic JSON input example                  
+    responses:
+      201:
+        description: Created.
+        headers:
+          Location:
+            displayName: location
+            description: This header must provide the URI to reach the created resource.
+            type: string
+            required: true
+            example: "/meetings/100"
+         
+  /{meeting-id}:
+    description: |
+      Resource used to get the information of a single meeting.
+    get:
+      description: |
+        This service get the detail information of a meeting.      
+      responses:
+        200:
+          description: OK.
+          body:
+            application/json:                          
+              examples:
+                simplest:
+                  value: !include examples/meetings/meeting-id/get_200.json
+                  description: JSON input example for the simplest call GET /meetings/{meeting-id}
+                  displayName:  Basic JSON output example  
+    patch:
+      description: |
+        This service update the information of a meeting.
+      body:          
+        application/json:
+          examples:
+            simplest:
+              value: !include examples/meetings/meeting-id/patch_request.json
+              description: JSON input example for the simplest call PATCH /meetings/{meeting-id}
+              displayName:  Basic JSON input example          
+      responses:
+        204:
+          description: No content.          
+    /participants:
+      description: |
+        Resource for managing the participants of a meeting.
+      post:
+        description: |
+          This service retrieves the list of the participants of a meeting.
+        body:          
+          application/json:
+            examples:
+              simplest:
+                value: !include examples/meetings/meeting-id/participants/post_request.json
+                description: JSON input example for the simplest call POST /meetings/{meeting-id}/participants
+                displayName:  Basic JSON input example    
+        responses:
+          201:
+            description: Created.
+            headers:
+              Location:
+                displayName: location
+                description: This header must provide the URI to reach the created resource.
+                type: string
+                required: true
+                example: "/meetings/{meeting-id}/participants/100"                       
+
+
