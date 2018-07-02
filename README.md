@@ -15,5 +15,5 @@ The process is quit easy. The only steps that an user has to follow are: 1) Look
 
 ![Creating meeting](/images/creatingMeeting.png)
 
-![Managin invitations](/images/managinINvitation.png)
+![Managin invitations](/images/managingInvitation.png)
 
