@@ -1,7 +1,11 @@
 # meetUsProject
 This repository intends to guide the API Rest endpoint that will be used for the project.
 
-## 1. Workflow
+## Arquitecture
+
+
+
+## Workflow
 
 This is the main workflow in which all the app is based on.
 
@@ -15,5 +19,9 @@ The process is quit easy. The only steps that an user has to follow are: 1) Look
 
 ![Creating meeting](/images/creatingMeeting.png)
 
-![Managin invitations](/images/managingInvitation.png)
+## 1.2 Managing invitations
+
+Once the invitation has been sent to the participant, it is his duty to answer. To do so, the participant user enters the app invitations list. Then, select the invitation he would like to see and then accept or reject the invitation. If an invitation is not answered within 15min, it is automatically rejected.
+
+![Managing invitations](/images/managingInvitation.png)
 
