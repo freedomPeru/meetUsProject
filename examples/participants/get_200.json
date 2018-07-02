@@ -1,18 +1,16 @@
 {
-    "data": [
-        {
-            "id": "123",
-            "avatar": "/rnr.jpg",
-            "firstName": "Pedro",
-            "middleName": "Luis",
-            "lastName": "Rodriguez",
-            "secondLastName": "Vargas",
-            "status": {
-                "id": "ACTIVE",
-                "name": "The user is active and could be invited for meeting."
-            },
-            "latitude": 1254.21,
-            "longitude": 125.21
-        }
-    ]
+  "data": [
+    {
+      "id": "123",
+      "avatar": "/rnr.jpg",
+      "firstName": "Pedro",
+      "middleName": "Luis",
+      "lastName": "Rodriguez",
+      "secondLastName": "Vargas",
+      "status": {
+        "id": "ACTIVE",
+        "name": "The user is active and could be invited for meeting."
+      }
+    }
+  ]
 }

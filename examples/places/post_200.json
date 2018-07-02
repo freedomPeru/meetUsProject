@@ -5,24 +5,44 @@
       "legalName": "Starbucks S.A.",
       "businessName": "Starbucks Real Plaza Salaverry",
       "preferenceOrder": 1.5,
-      "address": "Av. Brasil 2980",
-      "district": "Jesus Maria",
-      "province": "Lima",
-      "department": "Lima",
-      "latidude": -233.22,
-      "longitude": 22.3
+      "address": {
+        "addressName": "Av. Brasil 2980 dpto 402",
+        "reference": "Frente al velatorio de la policia",
+        "district": {
+          "id": "MAG",
+          "name": "Magdalena del Mar"
+        },
+        "province": {
+          "id": "LIM",
+          "name": "Lima"
+        },
+        "department": {
+          "id": "LIM",
+          "name": "Lima"
+        }
+      }
     },
     {
       "id": "124",
       "legalName": "Caffe Benne S.A.",
       "businessName": "Cafe Benne Real Plaza Salaverry",
       "preferenceOrder": 3,
-      "address": "Av. Brasil 2980",
-      "district": "Jesus Maria",
-      "province": "Lima",
-      "department": "Lima",
-      "latidude": -53.22,
-      "longitude": 25.3
+      "address": {
+        "addressName": "Av. Brasil 2980 dpto 402",
+        "reference": "Frente al velatorio de la policia",
+        "district": {
+          "id": "MAG",
+          "name": "Magdalena del Mar"
+        },
+        "province": {
+          "id": "LIM",
+          "name": "Lima"
+        },
+        "department": {
+          "id": "LIM",
+          "name": "Lima"
+        }
+      }
     }
   ]
 }
