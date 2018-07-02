@@ -1,14 +1,16 @@
 
 
-| ![Coveralls github](https://img.shields.io/coveralls/github/jekyll/jekyll.svg) | ![RAML version](https://img.shields.io/badge/raml-v0.2.0-blue.svg)|
-| -- | -- |
-
-# meetUsProject
+ # meetUsProject
 This repository intends to guide the API Rest endpoint that will be used for the project.
+
+![Coveralls github](https://img.shields.io/coveralls/github/jekyll/jekyll.svg) ![RAML version](https://img.shields.io/badge/raml-v0.2.0-blue.svg)
+
 
 ## Arquitecture
 
+The arquitecure model followed in this project is shown below.
 
+![Arquitecture](/images/arquitecture.png)
 
 ## Workflow
 
